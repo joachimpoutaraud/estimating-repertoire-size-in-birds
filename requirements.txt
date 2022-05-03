@@ -1,0 +1,13 @@
+os
+numpy
+json
+pandas
+random 
+tqdm
+scipy
+matplotlib
+pywt
+librosa
+ipython
+sklearn
+kneed
