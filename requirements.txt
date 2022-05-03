@@ -1,13 +1,11 @@
-os
 numpy
-json
 pandas
-random 
 tqdm
 scipy
 matplotlib
-pywt
+PyWavelets
 librosa
 ipython
 sklearn
 kneed
+notebook
