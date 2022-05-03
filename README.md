@@ -7,27 +7,27 @@ This repository presents an unsupervised method to estimate the size of the repe
 
 ## Installation
 
-Prepare your environment
+Download [Anaconda](https://www.anaconda.com/products/distribution) and prepare your environment using the command line
 
-```python
+```
 conda create --name chloris
 conda activate chloris
 ```
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required libraires
 
-```python
+```
 conda install -c anaconda pip
 pip install -r requirements.txt
 ``` 
 ## Usage
 ### 1. Downloading
 
-The data set contains a total of 339 audio recordings downloaded from the [Xeno-Canto](https://xeno-canto.org/) sound library, a collaborative project dedicated to sharing bird sounds from all over the world. We use an [area-based query](https://xeno-canto.org/api/2/recordings?query=chloris+area:europe+q:a) gathering European recordings of the [European Greenfinch](https://en.wikipedia.org/wiki/European_greenfinch) (Chloris Chloris). We select only high quality recordings according to the Xeno-Canto quality ratings ranging from **A** (highest quality) to **E** (lowest quality) and remove recordings that have an other species referenced in the background.
+The data set contains a total of 339 audio recordings downloaded from the [Xeno-Canto](https://xeno-canto.org/) sound library, a collaborative project dedicated to sharing bird sounds from all over the world. We use an [area-based query](https://xeno-canto.org/api/2/recordings?query=chloris+area:europe+q:a) gathering European recordings of the European Greenfinch ([Chloris Chloris](https://en.wikipedia.org/wiki/European_greenfinch)). We select only high quality recordings according to the Xeno-Canto quality ratings ranging from **A** (highest quality) to **E** (lowest quality) and remove recordings that have an other species referenced in the background.
 
 To download the data set, you need to install [`wget`](https://www.gnu.org/software/wget/)
 
-- For MAC OS, write the following command in the terminal: `brew install wget`
-- For Windows, download the package, copy the `wget.exe` file into your `C:\Windows\System32` folder and run `wget` on the command line to see if it is correctly installed.
+- For **macOS**, write the following command in the terminal: `brew install wget`
+- For **Windows**, download the package, copy the `wget.exe` file into your `C:\Windows\System32` folder and run `wget` on the command line to see if it is correctly installed.
 
 Finally, you can run the following script
 
