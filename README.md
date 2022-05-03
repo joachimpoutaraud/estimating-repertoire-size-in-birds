@@ -62,7 +62,7 @@ python _extracting.py
 
 ### 4. Evaluating
 
-![chloris](https://github.com/joachimpoutaraud/estimating-repertoire-size-in-a-songbird/blob/master/notebooks/images/dbscan.jpg)
+![chloris](https://github.com/joachimpoutaraud/estimating-repertoire-size-in-a-songbird/blob/main/notebooks/images/dbscan.jpg)
 
 After features are extracted from augmented data, they are normalized using the max–min method, selected based on individual ranking, and fed into an unsupervised algorithm to automatically cluster bird syllables in the audio recordings.
 
