@@ -1,9 +1,9 @@
 # UNSUPERVISED BIRD SONG SYLLABLES CLASSIFICATION
 
-This repository presents an unsupervised method to estimate the size of the repertoire of the [European Greenfinch](https://en.wikipedia.org/wiki/European_greenfinch) (Chloris Chloris). The proposed system receives as input a set of audio time series which is segmented and converted into a reduced representation set called a feature vector. The system is finally evaluated using clustering performance metrics to find the ideal number of syllables in the data set.
+This repository presents an unsupervised method to estimate the size of the repertoire of the European Greenfinch ([Chloris Chloris](https://en.wikipedia.org/wiki/European_greenfinch)). The proposed system receives as input a set of audio time series which is segmented and converted into a reduced representation set called a feature vector. The system is finally evaluated using clustering performance metrics to find the ideal number of syllables in the data set.
 
 ![chloris](https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44588041/1800)
-<h4 align="center">European Greenfinch - Photo credits © Rogério Rodrigues</h4>
+<h4 align="center">Photo credits © Rogério Rodrigues</h4>
 
 ## Installation
 
@@ -39,7 +39,7 @@ python _downloading.py
 
 Segmentation is a preliminary phase for the analysis and classification of bird syllables. This makes it easier to build analysis and classification systems with segmented objects than with raw data and reduces the size of the dataset which will facilitate computer processing and make it easier to carry on recognition and retrieval. 
 
-Here, input signals are transformed using the [Continuous Wavelet Transform](https://en.wikipedia.org/wiki/Continuous_wavelet_transform#:~:text=In%20mathematics%2C%20the%20continuous%20wavelet,of%20the%20wavelets%20vary%20continuously.) (CWT). Transformation process is computed with the free library for the Python programming language [PyWavelets](https://pypi.org/project/PyWavelets). Aditionally, we calculate the energy envelope of each wavelet vector using Root Mean Square (RMS) energy function. That way, we can isolate segments by finding high-energy peaks in the energy envelope and apply a threshold mask set to -20 dB.
+Here, input signals are transformed using the [Continuous Wavelet Transform](https://en.wikipedia.org/wiki/Continuous_wavelet_transform#:~:text=In%20mathematics%2C%20the%20continuous%20wavelet,of%20the%20wavelets%20vary%20continuously.) (CWT). Transformation process is computed with the free library for the Python programming language [PyWavelets](https://pypi.org/project/PyWavelets). Aditionally, we calculate the energy envelope of each wavelet vector using [Root Mean Square](https://en.wikipedia.org/wiki/Root_mean_square) (RMS) energy function. That way, we can isolate segments by finding high-energy peaks in the energy envelope and apply a threshold mask set to -20 dB.
 
 To segment audio recordings, you can run the following script
 
