@@ -1,11 +1,9 @@
 # UNSUPERVISED BIRD SONG SYLLABLES CLASSIFICATION
 
-![chloris](https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44588041/1800)
-<h4 align="center">Photo credits © Rogério Rodrigues</h4>
-
-
-
 This repository presents an unsupervised method to estimate the size of the repertoire of the [European Greenfinch](https://en.wikipedia.org/wiki/European_greenfinch) (Chloris Chloris). The proposed system receives as input a set of audio time series which is segmented and converted into a reduced representation set called a feature vector. The system is finally evaluated using clustering performance metrics to find the ideal number of syllables in the data set.
+
+![chloris](https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44588041/1800)
+<h4 align="center">European Greenfinch - Photo credits © Rogério Rodrigues</h4>
 
 ## Installation
 
@@ -65,7 +63,7 @@ python _extracting.py
 After features are extracted from augmented data, they are normalized using the max–min method, selected based on individual ranking, and fed into an unsupervised algorithm to automatically cluster bird syllables in the audio recordings.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/joachimpoutaraud/estimating-repertoire-size-in-a-songbird/main/notebooks/images/dbscan.jpg" width="350" title="Unsupervised bird song syllable classification
+  <img src="https://raw.githubusercontent.com/joachimpoutaraud/estimating-repertoire-size-in-a-songbird/main/notebooks/images/dbscan.jpg" width="500" title="Unsupervised bird song syllable classification
 using the DBSCAN algorithm">
 </p>
 
