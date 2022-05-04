@@ -49,7 +49,9 @@ python _segmenting.py
 
 ### 3. Extracting
 
-Features are extracted from each bird syllable and constitute a feature vector, which is a representation of the syllable. Since bird songs are musical in nature, time and frequency-based features used in audio and music retrieval are extracted for the bird syllable classification. The feature vector is composed of 14 Descriptive Features (DFs), 13 Mel-Frequency Cepstral Coefficients (MFCCs) to which the duration of the syllable (DUR) is concatenated, thus yielding a feature vector of length 28.
+Features are extracted from each bird syllable and constitute a feature vector, which is a representation of the syllable. Since bird songs are musical in nature, time and frequency-based features used in audio and music retrieval are extracted for the bird syllable classification. The feature vector is composed of 14 **Descriptive Features (DFs)**, 13 **Mel-Frequency Cepstral Coefficients (MFCCs)** to which the duration of the syllable (DUR) is concatenated, thus yielding a feature vector of length 28.
+
+**Descriptive Features (DFs)**
 
 - Energy (EN)
 - Zero Crossing Rate (ZCR)
@@ -60,9 +62,9 @@ Features are extracted from each bird syllable and constitute a feature vector, 
 - Spectral Roll Off (SR)
 - Spectral Flatness (SF)
 
-- Mel-Frequency Cepstral Coefficients (MFCCs)
+**Mel-Frequency Cepstral Coefficients (MFCCs)**
 
-To extract the time and frequency domain features, you can run the following script
+To extract time and frequency-based features, you can run the following script
 
 ```
 python _extracting.py
@@ -83,6 +85,7 @@ To evaluate the proposed system, you can run the following script
 ```
 python _evaluating.py
 ```
+>**Note:** feature vectors have already been selected according to the results found in the notebook *4.selecting.ipynb*
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
