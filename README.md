@@ -34,7 +34,7 @@ To download the data set, you need to install [`wget`](https://www.gnu.org/softw
 Finally, you can run the following script
 
 ```
-python _downloading.py
+python downloading.py
 ```
 >**Note:** data have already been downloaded and are stored in the `data/recordings` folder 
 
@@ -47,7 +47,7 @@ Here, input signals are segmented using the [Continuous Wavelet Transform](https
 To segment audio recordings, you can run the following script
 
 ```
-python _segmenting.py
+python segmenting.py
 ```
 >**Note:** audio recordings have already been segmented and temporal information values are stored in the `dataset.csv` file 
 
@@ -71,7 +71,7 @@ Features are extracted from each bird syllable and constitute a feature vector, 
 To extract time and frequency-based features, you can run the following script
 
 ```
-python _extracting.py
+python extracting.py
 ```
 >**Note:** features have already been extracted for each syllable and are stored in the `dataset.csv` file 
 
@@ -87,7 +87,7 @@ using the DBSCAN algorithm">
 To evaluate the proposed system, you can run the following script
 
 ```
-python _evaluating.py
+python evaluating.py
 ```
 >**Note:** feature vectors have already been selected according to the results found in the notebook *4.selecting.ipynb*
 
