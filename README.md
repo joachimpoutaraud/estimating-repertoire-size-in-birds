@@ -2,7 +2,7 @@
 
 This repository presents an unsupervised method to estimate the repertoire size in the European Greenfinch ([Chloris Chloris](https://en.wikipedia.org/wiki/European_greenfinch)). The proposed method receives as input a set of audio time series which is segmented and converted into a reduced representation set called a feature vector. The system is finally evaluated using clustering performance metrics to find the ideal number of syllables in the data set. 
 
-Based on "[Estimating the repertoire size in birds using Unsupervised Clustering Techniques](https://github.com/joachimpoutaraud/estimating-repertoire-size-in-birds/blob/main/PAPER.pdf)" 2022, Joachim Poutaraud
+Based on "[Estimating the repertoire size in birds using Unsupervised Clustering Techniques](https://arxiv.org/submit/4797753/view)" 2022, Joachim Poutaraud
 
 ![chloris](https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44588041/1800)
 <h4 align="center">Photo credits © Rogério Rodrigues</h4>
